@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import {defineComponent, ref} from 'vue';
+import {defineComponent} from 'vue';
 
 const Token = 'YmVmYjliYmQtN2U0MC00MzkyLTgwNjUtYTA1ZTRkMzAwZTc0'
 const URL = 'https://api.m3o.com/v1/weather/Forecast'
@@ -23,21 +23,16 @@ type myObjectType = {
   }
 }
 
-export default defineComponent<{}, {}, myObjectType>({
-  // install(app) {
-  //   app.config.globalProperties.$validate = (data: object, rule: object) => {}
-  // },
+export default defineComponent <{}, {}, myObjectType>({
   name: 'App',
   components: {},
-  data () {
-    return {
-        
-    }
+  data() {
+    return {}
   },
 
   methods:{
-    getFetch() { 
-      this.data
+    getFetch() {
+      this.data //
       var inputDays = document.querySelector('.day').value
       var inputCity = document.querySelector('.city').value 
       var output = document.querySelector('.output')
