@@ -10,8 +10,9 @@ module.exports = {
     "plugin:prettier/recommended",
     "eslint:recommended",
     "@vue/typescript/recommended",
-    // "@vue/prettier",
-    // "@vue/prettier/@typescript-eslint",
+    "@vue/prettier",
+    "@vue/prettier/@typescript-eslint",
+    "@vue/standard"
   ],
 
   parserOptions: {
@@ -32,13 +33,4 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   },
 
-  'extends': [
-    'plugin:vue/vue3-recommended',
-    'plugin:prettier/recommended',
-    'eslint:recommended',
-    '@vue/typescript/recommended',
-    'plugin:vue/vue3-essential',
-    '@vue/prettier',
-    '@vue/prettier/@typescript-eslint'
-  ]
 };

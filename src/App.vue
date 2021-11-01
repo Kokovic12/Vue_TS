@@ -32,10 +32,10 @@ export default defineComponent <{}, {}, myObjectType>({
 
   methods:{
     getFetch() {
-      this.data //
-      var inputDays = document.querySelector('.day').value
-      var inputCity = document.querySelector('.city').value 
-      var output = document.querySelector('.output')
+      this.data
+      var inputDays= (<HTMLInputElement>document.querySelector('.day')).value
+      var inputCity =(<HTMLInputElement>document.querySelector('.city')).value 
+      var output = <HTMLInputElement>document.querySelector('.output')
 
     fetch (URL +  `?days=${inputDays}&location=${inputCity}`, {
       method: 'GET',
